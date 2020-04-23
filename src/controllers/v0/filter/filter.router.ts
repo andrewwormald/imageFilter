@@ -18,7 +18,7 @@ const router: Router = Router();
 //    image_url: URL of a publicly accessible image
 // RETURNS
 //   the filtered image file [!!TIP res.sendFile(filteredpath); might be useful]
-router.get('/image',
+router.get('/filteredimage',
 	async (req: Request, res: Response)  => {
 		const q = url.parse(req.url, true).query;
 		const imageURL = q['image_url'] as string;
